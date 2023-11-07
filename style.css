@@ -2,6 +2,7 @@
 /*import das fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala&family=Titillium+Web&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
 
 * {
     margin: 0px;
@@ -12,10 +13,12 @@
 
 body {
     font-size: 100%;
-    background: linear-gradient(68deg, #2F2325 16.62%, #8E5D52 85.61%);
+    background: linear-gradient(68deg, #f09794
+    16.62%, #dc557e 85.61%);
 }
 
 .cabecalho {
+    width: auto;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -25,7 +28,16 @@ body {
 
 .cabecalho-imagem {
     height: 72px;
+    
 }
+
+.moldura-logo{
+    background-color: white;
+    border-radius: 50%;
+    padding: 25px;
+}
+
+
 
 .cabecalho-menu {
     display: flex;
@@ -40,13 +52,15 @@ body {
 }
 
 .conteudo {
+    width: 500px;
+    display: inline;
     border-top: 0.4px solid #fff2e7;
     margin-bottom: 48px;
 }
 
 .conteudo-principal {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: space-around;
 }
@@ -58,7 +72,7 @@ body {
 }
 
 .conteudo-principal-escrito-titulo {
-    font-family: 'Righteous', cursive;
+    font-family: 'allura', cursive;
     font-weight: 400;
     font-size: 64px;
     color: #fff2e7;
@@ -79,7 +93,7 @@ body {
     box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
     font-family: 'Sarla', sans-serif;
-    font-weight: 400;
+    font-weight: bold;
     size: 24px;
     color: #2f2325;
 }
@@ -89,8 +103,10 @@ body {
 }
 
 .conteudo-principal-imagem {
-    height: 430px;
+    display: block;
+    align-content: center;
 
+    
 }
 
 .conteudo-segundario {
@@ -124,7 +140,9 @@ body {
 }
 
 .rodape-imagem {
-    height: 48px;
+    height: 50px;
     display: block;
-    margin: 0 auto;
+    margin: 500px;
+    
+    
 }
